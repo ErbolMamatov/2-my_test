@@ -9,11 +9,9 @@
 // const numbers = [1, 2, 2, 3, 4, 4, 5];
 // // Ожидаемый результат: [1, 2, 3, 4, 5]
 
-const numbers = [1, 2, 2, 3, 4, 4, 5];
-
+const numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9];
 const uniqueNumbers = [...new Set(numbers)];
-
-console.log(uniqueNumbers); // [1, 2, 3, 4, 5]
+console.log(uniqueNumbers);
 
 // ⏱ 2. Таймер обратного отсчёта
 // Задание:
@@ -27,9 +25,9 @@ const timer = setInterval(() => {
     counter--;
   } else {
     console.log("Старт!");
-    clearInterval(timer); // остановить таймер
+    clearInterval(timer);
   }
-}, 1000); // 1000 мс = 1 секунда
+}, 1000); // &**1000 мс = 1 секунда**& //
 
 
 // 🗂 3. Подсчёт гласных в строке
@@ -42,7 +40,7 @@ const timer = setInterval(() => {
 // // Пример:
 // countVowels("Hello World"); // -> 3
 
-function countVowels(str) {
+function Vowels(str) {
     const vowels = "aeiouAEIOU";
     let count = 0;
   
@@ -54,15 +52,14 @@ function countVowels(str) {
   
     return count;
   }
-  
-  console.log(countVowels("Hello World")); // 3
+  console.log(Vowels("Hello Aziz"));
   
 
 // 🎲 4. Генерация случайного кода
 // Задание:
 // Сделай функцию, которая создаёт случайный 6-значный код, состоящий из букв и цифр (например: "a7b2c3").
 
-function generateCode(length = 6) {
+function Generate(length = 6) {
     const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
     let code = "";
   
@@ -70,11 +67,10 @@ function generateCode(length = 6) {
       const randomIndex = Math.floor(Math.random() * characters.length);
       code += characters[randomIndex];
     }
-  
     return code;
   }
   
-  console.log(generateCode()); // Например: "a7c2d9"
+  console.log(generate()); // Например: "a7c2d9"
   
 
 // 5 задача:
@@ -86,10 +82,14 @@ function generateCode(length = 6) {
 // isLeapYear(2024); // -> true
 // isLeapYear(2023); // -> false
 
-function isLeapYear(year) {
+function IsYeare(year) {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
   }
   
-  console.log(isLeapYear(2024)); // true
-  console.log(isLeapYear(2023)); // false
+  console.log(IsYeare(2024)); // TRUE
+  console.log(IsYeare(2023)); // FALSE
   
+
+
+
+//  СААТ 2 - 7 жарым сегиздерге чейин отурдум! //
